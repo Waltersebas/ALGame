@@ -1,0 +1,99 @@
+body {
+    background-color: #1b1f2a;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e2d42;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #00bcd4;
+    border-bottom: 5px solid #00838f;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #223344;
+}
+
+.intro h1 {
+    font-size: 42px;
+    color: #00bcd4;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #b0bec5;
+}
+
+.games {
+    padding: 30px 20px;
+    background-color: #1b1f2a;
+    text-align: center;
+}
+
+.games h2 {
+    color: #00bcd4;
+    font-size: 32px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.game-container {
+    background-color: #2a2f3a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.game-container h3 {
+    color: #00bcd4;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: #cfd8dc;
+    border: 2px solid #1e2d42;
+    text-align: center;
+    font-size: 40px;
+    color: #1b1f2a;
+}
+
+canvas {
+    border: 1px solid #00bcd4;
+    background-color: #cfd8dc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #1b1f2a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00838f;
+}

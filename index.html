@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>ALGame</title>
+</head>
+<body>
+    <header>ALGame</header>
+
+    <section class="intro">
+        <h1>Divirta-se com ALGame</h1>
+        <p>Dois jogos clássicos para você se entreter!</p>
+    </section>
+
+    <section class="games">
+        <h2>Escolha o seu jogo</h2>
+        <div class="game-list">
+            <!-- Jogo da Velha -->
+            <div class="game-container">
+                <h3>Jogo da Velha</h3>
+                <div id="tic-tac-toe">
+                    <table>
+                        <tr>
+                            <td onclick="makeMove(this, 0, 0)"></td>
+                            <td onclick="makeMove(this, 0, 1)"></td>
+                            <td onclick="makeMove(this, 0, 2)"></td>
+                        </tr>
+                        <tr>
+                            <td onclick="makeMove(this, 1, 0)"></td>
+                            <td onclick="makeMove(this, 1, 1)"></td>
+                            <td onclick="makeMove(this, 1, 2)"></td>
+                        </tr>
+                        <tr>
+                            <td onclick="makeMove(this, 2, 0)"></td>
+                            <td onclick="makeMove(this, 2, 1)"></td>
+                            <td onclick="makeMove(this, 2, 2)"></td>
+                        </tr>
+                    </table>
+                    <button onclick="resetGame()">Resetar Jogo</button>
+                </div>
+            </div>
+
+            <!-- Jogo da Cobrinha -->
+            <div class="game-container">
+                <h3>Cobrinha</h3>
+                <canvas id="snakeGame" width="300" height="300"></canvas>
+                <p>Pontuação máxima: 20</p>
+                <button onclick="startGame()">Iniciar Jogo</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
